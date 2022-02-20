@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="stylesss.css">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>MyCourse</title>
+    <script type="text/javascript" src="jquery-3.6.0.min.js">
+
+    </script>
+</head>
+<body>
+<div class="menu">
+    <a id="showall"> <b>All</b></a>
+    <a class="Single" target="1"><b>Number</b></a>
+    <a class="Single" target="2"><b>Email</b></a>
+    <a class="Single" target="3"><b>Instagram</b></a>
+</div>
+<section class="target_box">
+    <div id="div1" class="target"><b>+7-708-199-0297</b> </div>
+        <div id="div2" class="target"><b>212242@astanait.edu.kz</b></div>
+            <div id="div3" class="target"><b>@21teekay_</b></div>
+</section>
+<script type="text/javascript">
+jQuery(function(){
+jQuery('#showall').click(function(){
+jQuery('.target').show();
+});
+
+jQuery('.Single').click(function() {
+      jQuery('.target').hide();
+      jQuery('#div'+$(this).attr('target')).show();
+});
+});
+</script>
+</body>
+</html>
